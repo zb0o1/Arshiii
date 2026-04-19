@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Arshii 💖✨</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Dancing+Script:wght@600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <div id="envelope-screen">
+        <div class="envelope-container">
+            <div class="envelope-pulse">
+                <i class="fas fa-envelope-open-text envelope-icon"></i>
+            </div>
+            <h1 class="envelope-text">A little piece of my heart...</h1>
+            <p class="envelope-subtext">Tap anywhere to open 💌</p>
+        </div>
+    </div>
+
+    <main id="main-world" class="hidden-world">
+        
+        <div id="music-prompt">Play this with headphones 🎶💖</div>
+        <div id="music-player" class="glass">
+            <audio id="bg-music" loop>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            </audio>
+            <button id="music-toggle"><i class="fas fa-music"></i></button>
+        </div>
+
+        <div id="whisper-container">
+            <div class="whisper w1">best friend forever 💕</div>
+            <div class="whisper w2">you matter 🥺</div>
+            <div class="whisper w3">my safe place 💖</div>
+            <div class="whisper w4">pure magic ✨</div>
+            <div class="whisper w5">always here for you 🦋</div>
+        </div>
+
+        <div id="floating-elements"></div>
+
+        <section id="hero" class="fullscreen">
+            <div class="glass hero-card">
+                <h1 id="typing-container"><span id="typing-text"></span><span class="cursor">|</span></h1>
+                <p class="subtext fade-in-delay">Welcome to your digital safe space 🌸</p>
+                <p class="instruction fade-in-delay">(Scroll down softly ✨)</p>
+            </div>
+        </section>
+
+        <section id="countdown-section" class="reveal">
+            <h2 class="section-title">Counting moments until your special day 💕</h2>
+            <div class="countdown-glass-container">
+                <div class="time-box glass float-anim">
+                    <span id="days">00</span><p>Days</p>
+                </div>
+                <div class="time-box glass float-anim delay-1">
+                    <span id="hours">00</span><p>Hours</p>
+                </div>
+                <div class="time-box glass float-anim delay-2">
+                    <span id="minutes">00</span><p>Minutes</p>
+                </div>
+                <div class="time-box glass float-anim delay-3">
+                    <span id="seconds">00</span><p>Seconds</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="letter-section" class="reveal">
+            <div class="glass letter-paper">
+                <h2 class="section-title">In English We Say:</h2>
+                <p class="letter-text">HAPPY BIRTHDAY<br>HAVE A BLESSED MY DEAR.. 🖤🦋</p>
+                
+                <div class="divider">✨ 🌸 ✨</div>
+                
+                <h2 class="section-title">But In Urdu We Say:</h2>
+                <div class="urdu-text" dir="rtl">
+                    <p>یہ بے خودی یہ لبوں کی ہنسی مبارک ہو۔<br>تمہیں یہ سالگرہ کی خوشی مبارک ہو۔ ❤️</p>
+                    <p class="transliteration">YE BE KHUDI YE LABO KI HANSI MUBARAK HO.<br>TUMHE YE SALGIRAH KI KHUSHI MUBARAK HO.</p>
+                    
+                    <p>کبھی نہ آئے کوئی غم قریب تمہارے۔<br>جہاں میں سب سے اچھے ہو نصیب تمہارے۔ ❤️</p>
+                    <p class="transliteration">KABHI NA AAYE KOI GUM KAREEB TUMHARE.<br>JAHAN ME SABSE ACCHE HO NASEEB TUMHARE.</p>
+                    
+                    <p>خلوص پیار بھری زندگی مبارک۔<br>تمہیں یہ سالگرہ کی خوشی مبارک۔ ❤️</p>
+                    <p class="transliteration">KHULUS PYAR BHARI JINDAGI MUBARAK.<br>TUMHE YE SALGIRAH MUBARAK.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="poetry-section" class="reveal">
+            <h2 class="section-title">For You, My Best Friend 🌸</h2>
+            <div class="poetry-grid urdu-text" dir="rtl">
+                <div class="glass card-glow"><p>♡ اگر میں تم پہ لکھتی ♡</p></div>
+                <div class="glass card-glow delay-1"><p>♡ تمہیں میں گل جہاں لکھتی ♡</p></div>
+                <div class="glass card-glow delay-2"><p>♡ چمن لکھتی، گھٹا لکھتی ♡</p></div>
+                <div class="glass card-glow delay-3"><p>♡ تمہیں میں آسمان لکھتی ♡</p></div>
+                <div class="glass card-glow delay-1"><p>♡ صبح لکھتی میں شاموں کی ♡</p></div>
+                <div class="glass card-glow delay-2"><p>♡ تمہیں کوئی سنہرا آسمان لکھتی ♡</p></div>
+                <div class="glass card-glow delay-3"><p>♡ ستارہ تم کو کہتی میں ♡</p></div>
+                <div class="glass card-glow delay-1"><p>♡ تمہی کو کہکشاں لکھتی ♡</p></div>
+                <div class="glass card-glow delay-2"><p>♡ بھلا کے ساری دنیا کو ♡</p></div>
+                <div class="glass card-glow delay-3"><p>♡ تمہیں میں من کی چاہ لکھتی ♡</p></div>
+            </div>
+        </section>
+
+        <section id="long-message" class="reveal">
+            <div class="glass long-letter">
+                <h2 class="section-title">To My Dearest Arshii 💕</h2>
+                <p class="reveal-line">From the moment we met, I knew my life was going to be infinitely better.</p>
+                <div class="heart-icon">💖</div>
+                <p class="reveal-line">You are more than just a best friend; you are my <span class="highlight">soulmate</span>, my safe space, and my favorite person in the whole world. 🌍</p>
+                <div class="heart-icon">🌸</div>
+                <p class="reveal-line">On this special day, I just want you to know how deeply loved you are. Your smile lights up every room, and your heart is made of pure gold. ✨</p>
+                <div class="heart-icon">🦋</div>
+                <p class="reveal-line">May this year bring you all the <span class="highlight">happiness</span>, success, and love that you endlessly give to others. I promise to hold your hand through all the highs and lows, today and forever.</p>
+                <p class="reveal-line">Happy Birthday, my beautiful Arshii! Let's make this year magical. 🥂🎀</p>
+            </div>
+        </section>
+
+        <section id="reasons" class="reveal">
+            <h2 class="section-title">Why You Are So Special 🥺</h2>
+            <div class="sticky-notes-grid">
+                <div class="sticky-note n1">
+                    <div class="pin"></div>
+                    <p>You make my life beautiful 🌸</p>
+                </div>
+                <div class="sticky-note n2 delay-1">
+                    <div class="pin"></div>
+                    <p>You are my home and safe place 💖</p>
+                </div>
+                <div class="sticky-note n3 delay-2">
+                    <div class="pin"></div>
+                    <p>My forever bestie 🦋</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="reveal">
+            <h2 class="section-title">Our Best Memories 📸</h2>
+            <div class="polaroid-grid">
+                <div class="polaroid p-left"><div class="tape"></div><img src="https://i.ibb.co/395wc5wM/503aaa66-deca-4dc8-ac72-798da3bcb6c0.jpg" alt="Mem 1"><p>My fav moment 🥺</p></div>
+                <div class="polaroid p-right"><div class="tape"></div><img src="https://i.ibb.co/QvkByB0k/5fca3a0f-e152-41db-90d5-7dc600a89a1f.jpg" alt="Mem 2"><p>Smiles only 💕</p></div>
+                <div class="polaroid p-left"><div class="tape"></div><img src="https://i.ibb.co/NgkphTyf/b8bc4911-3ab1-487f-8869-8f900c487e86.jpg" alt="Mem 3"><p>You & Me 🦋</p></div>
+                
+                <div class="polaroid p-right"><div class="tape"></div><img src="https://i.ibb.co/YBbK46vM/576fe7c9-f2f3-42f0-a54c-dec380a528f0.jpg" alt="Mem 4"><p>Forever vibe ✨</p></div>
+                <div class="polaroid p-center"><div class="tape"></div><img src="https://i.ibb.co/wNTzR791/4da2778d-becb-4c26-a4fa-180c84e5fad3.jpg" alt="Mem 5"><p>Love you! 💖</p></div>
+                <div class="polaroid p-left"><div class="tape"></div><img src="https://i.ibb.co/TBtvY953/484ec2c5-daa3-444c-83ed-bdbeb81fb47f.jpg" alt="Mem 6"><p>Precious 🌸</p></div>
+                
+                <div class="polaroid p-right"><div class="tape"></div><img src="https://i.ibb.co/Q7JGfLtQ/f0c64afa-683e-4281-9bb2-5682467fd712.jpg" alt="Mem 7"><p>Cutest soul 🎀</p></div>
+                <div class="polaroid p-left"><div class="tape"></div><img src="https://i.ibb.co/7NQvSP61/5ba74d7a-ee38-4750-b591-cb8b0b394afd.jpg" alt="Mem 8"><p>Blessed 🥺</p></div>
+                <div class="polaroid p-right"><div class="tape"></div><img src="https://i.ibb.co/b5Lt6nYg/bc06de0b-a086-4c7c-ae7a-6797073d329e.jpg" alt="Mem 9"><p>To infinity ✨</p></div>
+            </div>
+        </section>
+
+        <section id="surprise" class="reveal">
+            <div class="glass surprise-card">
+                <h2 class="section-title">One Last Thing... 🥺</h2>
+                <p style="margin-bottom: 2rem; font-size: 1.2rem;">Are you ready?</p>
+                <button id="surprise-btn" class="glow-btn">Open Surprise 🎁</button>
+            </div>
+        </section>
+
+        <footer class="footer-signoff">
+            <p>Made with love, just for you 💖</p>
+            <p style="font-size: 0.9rem; margin-top: 5px; opacity: 0.7;">(Click anywhere to spread love ✨)</p>
+        </footer>
+
+    </main>
+
+    <div id="surprise-modal">
+        <div class="modal-glow"></div>
+        <div class="glass modal-content">
+            <h1 class="dramatic-text">You are not just my best friend...<br>you are my home 💖</h1>
+            <button id="close-surprise" class="glow-btn" style="margin-top: 30px;">Love you too 🥺</button>
+        </div>
+    </div>
+
+    <div class="vignette"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
